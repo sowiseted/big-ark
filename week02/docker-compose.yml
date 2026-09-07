@@ -1,0 +1,8 @@
+services:
+  lab-db:
+    image: postgres
+    container_name: lab-db
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
